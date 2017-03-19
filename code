@@ -63,7 +63,11 @@ print("\n\n***** Problem 2 *****")
 ## The function should invoke the input function upon each element of the input list, and accumulate the return values to a new list.
 ## The function should return the new list of accumulated -- mapped! -- values.
 ## HINT: you should be able to write this in 5 lines of code or fewer! 
-
+def personal_map(aFunction, aList):
+    mapped_list = []
+    for i in aList:
+        mapped_list.append(aFunction(i))
+    return(mapped_list)
 
 ## [PROBLEM 3]
 print("\n\n***** Problem 3 *****")
