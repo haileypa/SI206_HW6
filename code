@@ -129,6 +129,11 @@ print("this is prod_list", prod_list)
 print("\n\n***** Problem 7 *****")
 # Create a list of tuples wherein each tuple has a student's name and productivity value. Save the list of tuples in a variable called names_and_productivities. To do this, you should use a list comprehension (you may also use the zip function, and you may use any variables you have already created).
 
+name_list = [student.name for student in programmers]
+productivity_list = [student.programming_productivity() for student in programmers]
+names_and_productivities = list(zip(name_list, productivity_list))
+print(names_and_productivities)
+
 ## But be careful that if you use answers from previous problems, you use the LISTs you generated, so that all your tests can still pass and you avoid confusion!
 
 ## [PROBLEM 8]
