@@ -8,7 +8,6 @@ import random
 
 ## There are tests for each problem; you should also follow the instructions for things to do in the code that cannot be tested with unit tests, e.g. using certain structures.
 
-
 ## [PROBLEM 1]
 print("\n\n***** Problem 1 *****")
 ## We've provided a definition of a class Student, similar to the one you may have seen in lecture. 
@@ -31,7 +30,14 @@ class Student():
         return this_Student.years_UM
 
     # Define the additional method here
-    
+    def write_programs(self, num=1):
+        self.num_programs = self.num_programs + num
+   
+    def programming_productivity(self):
+        programming_productivity = self.num_programs/self.years_UM
+        return(programming_productivity)
+
+
 
 #### DONE WITH STUDENT CLASS DEFINITION
 
